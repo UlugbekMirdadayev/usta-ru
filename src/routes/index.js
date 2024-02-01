@@ -6,7 +6,7 @@ import { PageWithHeader } from "../utils";
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: PageWithHeader(Home),
+    element: <PageWithHeader component={<Home />} />,
     children: [
       {
         path: "categories",
